@@ -1,0 +1,226 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+li {
+  list-style: none; }
+
+a {
+  text-decoration: none; }
+
+img {
+  vertical-align: middle; }
+
+header {
+  width: 100%;
+  font-size: 12px;
+  box-sizing: border-box; }
+  header .header_top {
+    height: 31px;
+    margin: 0 auto;
+    padding: 0 63px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #eee;
+    border-bottom: 1px solid #ccc; }
+    header .header_top ul {
+      display: flex;
+      align-items: center;
+      font-weight: bold; }
+      header .header_top ul li {
+        margin-right: 8px;
+        position: relative; }
+        header .header_top ul li:first-child {
+          color: #666;
+          font-weight: normal; }
+        header .header_top ul li::after {
+          content: "";
+          position: absolute;
+          top: 3px;
+          right: -5px;
+          width: 2px;
+          height: 12px;
+          background: #999; }
+        header .header_top ul li:last-child::after, header .header_top ul li:nth-child(3)::after {
+          display: none; }
+        header .header_top ul li a {
+          color: #333; }
+        header .header_top ul li a:hover {
+          color: #c00;
+          text-decoration: underline; }
+    header .header_top .ul2 {
+      font-weight: normal; }
+  header .head_center {
+    padding: 0 63px;
+    margin: 0 auto;
+    height: 115px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    header .head_center .left a {
+      color: #747474; }
+    header .head_center .right {
+      height: 20px;
+      overflow: hidden;
+      display: flex;
+      align-items: center; }
+      header .head_center .right input {
+        width: 101px;
+        border: 1px solid;
+        border-radius: 15px; }
+      header .head_center .right span {
+        width: 36px;
+        height: 20px;
+        display: inline-block;
+        background: url(../img/head_search.jpg) no-repeat center; }
+  header .head_bottom {
+    padding: 0 63px;
+    height: 30px; }
+    header .head_bottom .head_bottom_ul {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      line-height: 30px;
+      font-weight: bold;
+      font-size: 14px; }
+      header .head_bottom .head_bottom_ul .head_bottom_li a {
+        color: #000; }
+      header .head_bottom .head_bottom_ul .head_bottom_li:hover .head_show {
+        display: flex; }
+  header .head_show {
+    display: flex;
+    display: none;
+    justify-content: center;
+    width: 100%;
+    background: #fff;
+    position: absolute;
+    left: 0;
+    z-index: 2; }
+    header .head_show .left {
+      width: 140px; }
+      header .head_show .left li {
+        height: 30px; }
+        header .head_show .left li a {
+          color: #000;
+          height: 75px;
+          border-bottom: 1px solid; }
+
+main {
+  width: 1000px;
+  margin-left: 80px;
+  margin-top: 20px; }
+  main .section1 {
+    display: flex; }
+  main .left {
+    width: 460px; }
+    main .left .choose {
+      margin: 10px 10px; }
+      main .left .choose img {
+        margin-right: 12px; }
+  main .right {
+    width: 520px;
+    margin-left: 20px; }
+    main .right h2 {
+      color: #000;
+      font-size: 16px;
+      line-height: 24px; }
+    main .right p {
+      font-size: 14px;
+      color: #666;
+      line-height: 21px; }
+    main .right .good_price {
+      background: url(../img/price_bg.png);
+      margin: 15px auto 8px auto;
+      width: 485px;
+      padding: 20px;
+      box-sizing: border-box; }
+      main .right .good_price span:nth-child(1) {
+        font-size: 12px;
+        color: #999;
+        width: 70px;
+        line-height: 25px;
+        display: inline-block; }
+      main .right .good_price span:nth-child(2) {
+        font-size: 18px;
+        color: #c00;
+        line-height: 25px;
+        font-weight: bold; }
+    main .right .size {
+      margin-top: 15px; }
+      main .right .size .size_h {
+        font-size: 12px;
+        color: #999;
+        margin: 0 60px 0 30px; }
+      main .right .size .size_choose {
+        display: inline-block; }
+        main .right .size .size_choose span {
+          display: inline-block;
+          width: auto;
+          padding: 0 5px;
+          margin: 3px 2px;
+          height: 25px;
+          font-size: 12px;
+          color: #000;
+          line-height: 25px;
+          border: 1px solid #b8b7bd;
+          cursor: pointer; }
+    main .right .colors {
+      margin-top: 15px; }
+      main .right .colors .colors_h {
+        font-size: 12px;
+        color: #999;
+        margin: 0 60px 0 30px; }
+      main .right .colors .colors_choose {
+        display: inline-block; }
+        main .right .colors .colors_choose span {
+          display: inline-block;
+          width: auto;
+          padding: 0 5px;
+          margin: 3px 2px;
+          height: 25px;
+          font-size: 12px;
+          color: #000;
+          line-height: 25px;
+          border: 1px solid #b8b7bd;
+          cursor: pointer; }
+    main .right .nums {
+      margin-top: 15px; }
+      main .right .nums .nums_h {
+        font-size: 12px;
+        color: #999;
+        margin: 0 60px 0 30px; }
+      main .right .nums #nums_input {
+        width: 60px;
+        height: 30px;
+        outline: 0; }
+      main .right .nums .star {
+        background-position: 0 0;
+        background: url(../img/star.png) no-repeat -13px 0;
+        padding-left: 22px; }
+    main .right .buy {
+      margin-left: 100px;
+      margin-top: 35px; }
+      main .right .buy span {
+        display: inline-block;
+        width: 178px;
+        height: 38px;
+        line-height: 38px;
+        color: #FF0036;
+        background: #ffeded;
+        border: 1px solid #FF0036;
+        margin-right: 10px;
+        text-align: center; }
+      main .right .buy span:nth-child(2) {
+        color: white;
+        background: #FF0036 url(../img/buy.png) 30px no-repeat; }
+    main .right .promise {
+      margin-top: 20px;
+      display: flex; }
+      main .right .promise li {
+        margin-right: 44px; }
+
+.select {
+  border: 1px solid #c00 !important; }
+
+/*# sourceMappingURL=xiangqing.css.map */
