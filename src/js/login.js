@@ -10,12 +10,12 @@ require(["require.config"], function () {
 				},
 				success: function (res) {
 					console.log(res);
-					if (res == "0") {
+					if (res != "1") {
 						alert("登录失败");
 						localStorage.removeItem("username")
 					} else if (res == "1") {
-						window.location.href = "/"
-						localStorage.setItem("username", $("#username"))
+						window.location.href = "/index.html"
+						localStorage.setItem("username", $("#username").val())
 					}
 				}
 			})

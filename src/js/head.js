@@ -20,6 +20,15 @@ define(["jquery"], $ => {
 			</div>`;
 
 		$("header .head_bottom ul li").append(html);
+
+		if (localStorage.getItem("username")) {
+			console.log($(".username"))
+			$(".username").html(localStorage.getItem("username"));
+		} else {
+			$(".username").on("click", function () {
+				window.location.href = "/htmls/login.html";
+			})
+		}
 	});
 
 })

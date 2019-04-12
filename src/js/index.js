@@ -4,6 +4,5 @@ require(["require.config"], function () {
 		if (JSON.parse(localStorage.getItem("shops")) == null) {
 			localStorage.setItem("shops", JSON.stringify(shops));
 		}
-
 	})
 })

@@ -46,7 +46,7 @@ require(["require.config"], function () {
 						html += `<tr>
 						<td><input type="checkbox" name="" class="checkOne"/>选择</td>
 						<td><img src="${val.shopimg}" width="100" height="100" ><span>${val.shopname}</span></td>
-						<td><span class="jian">-</span> <input type="number" class="nums" value="${val.shopNum}"/> <span class="jia">+</span></td>
+						<td><span class="jian">-</span> <input type="number" class="nums" value="${val.shopNum}" readonly="readonly" disabled="disabled"/> <span class="jia">+</span></td>
 						<td class="price">￥${val.shopPrice}</td>
 						<td>
 							<button type="button" class="btn btn-warning btn_del">删除</button>
