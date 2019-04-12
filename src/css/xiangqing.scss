@@ -9,6 +9,21 @@ main{
 	}
 	.left{
 		width: 460px;
+		position: relative;
+		.bigimg_box{
+			position: absolute;
+			top: 0;
+			left: 430px;
+			width: 517px;
+			height: 517px;
+			overflow: hidden;
+			display: none;
+			.bigimg{
+				position: absolute;
+				top: 0;
+				left: 0;
+			}
+		}
 		.choose{
 			margin: 10px 10px;
 			img{
@@ -138,6 +153,32 @@ main{
 			li{
 				margin-right: 44px;
 			}
+		}
+	}
+	.cart{
+		position: fixed;
+		right: 0;
+		top: 0;
+		width: 35px;
+		height: 100%;
+		padding: 200px 0 0;
+		text-align: center;
+		color: #fff;
+		box-sizing: border-box;
+		background: #000;
+		z-index: 2;
+		i{
+			background: url(/img/buy.png)no-repeat;
+			width: 16px;
+			height: 16px;
+			display: block;
+			margin: 0 auto;
+			cursor: pointer;
+		}
+		p{
+			width: 20px;
+			margin: 0 auto;
+			cursor: pointer;	
 		}
 	}
 }

@@ -1,3 +1,3 @@
-define(["jquery"],$=>{
-	$(".foot-container").load("./htmls/foot.html");
+define(["jquery"], $ => {
+	$(".foot-container").load("/htmls/foot.html");
 })

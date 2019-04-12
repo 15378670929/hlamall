@@ -1,5 +1,5 @@
-define(["jquery"],$=>{
-	$(".head-container").load("./htmls/head.html",function(){
+define(["jquery"], $ => {
+	$(".head-container").load("/htmls/head.html", function () {
 		var html = `<div class="head_show">
 				<div class="left">
 					<ul>
@@ -15,11 +15,11 @@ define(["jquery"],$=>{
 					</ul>
 				</div>
 				<div class="right">
-					<img src="./img/head_hover1.jpg" >
+					<img src="/img/head_hover1.jpg" >
 				</div>
 			</div>`;
-		
-			$("header .head_bottom ul li").append(html);
+
+		$("header .head_bottom ul li").append(html);
 	});
-	
+
 })

@@ -44,9 +44,15 @@ gulp.task("js", () => {
     .pipe(connect.reload());
 })
 
-gulp.task("lib" ,() => {
+gulp.task("lib", () => {
   gulp.src("src/libs/**/*")
     .pipe(gulp.dest("dist/libs"))
+    .pipe(connect.reload());
+})
+
+gulp.task("api", () => {
+  gulp.src("src/api/**/*.php")
+    .pipe(gulp.dest("dist/api"))
     .pipe(connect.reload());
 })
 
@@ -59,7 +65,7 @@ gulp.task("img", () => {
 gulp.task("server", () => {
   connect.server({
     port: 8080,
-    livereload : true,
+    livereload: true,
     root: "dist"
   })
 })
@@ -70,8 +76,9 @@ gulp.task("watch", () => {
   gulp.watch("src/**/*.html", ["html"]);
   gulp.watch("src/js/**/*.js", ["js"]);
   gulp.watch("src/css/**/*.scss", ["css"]);
+  gulp.watch("src/api/**/*.php", ["api"]);
 
 })
 
 
-gulp.task("default", ["html", "js", "css", "server", "lib", "img", "watch"]);
+gulp.task("default", ["html", "api", "js", "css", "server", "lib", "img", "watch"]);
