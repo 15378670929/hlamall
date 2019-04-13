@@ -23,9 +23,20 @@ define(["jquery"], $ => {
 
 		if (localStorage.getItem("username")) {
 			$(".username").html(localStorage.getItem("username"));
+			$(".loginout").html("注销")
+			$(".loginout").on("click", function () {
+				$(".loginout").html("免费注册")
+				localStorage.removeItem("username");
+				window.location.href = "/htmls/login.html";
+			})
 		} else {
 			$(".username").on("click", function () {
 				window.location.href = "/htmls/login.html";
+			})
+			$(".loginout").on("click", function () {
+				$(".loginout").html("免费注册")
+				localStorage.removeItem("username");
+				window.location.href = "/htmls/regist.html";
 			})
 		}
 	});
