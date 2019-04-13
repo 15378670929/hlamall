@@ -84,6 +84,8 @@ main{
 			justify-content: space-between;
 			margin-top: 30px;
 			.paixu{
+				position: relative;
+				z-index: 2;
 				span{
 					border: 1px solid #ccc;
 					padding: 0 15px 0 5px;
@@ -103,6 +105,9 @@ main{
 						background: url(/img/sprite.png);
 						background-position: -22px -23px;
 					}
+				}
+				.UpP::after{
+					background: url(/img/sprite.png) -38px -23px;
 				}
 				span:nth-child(1){
 					border-right: 0;
